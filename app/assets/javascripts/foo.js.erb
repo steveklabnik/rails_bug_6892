@@ -1,0 +1,5 @@
+function roundNumber(num, dec) {
+        var result = Math.round(num*Math.pow(10,dec))/Math.pow(10,dec);
+        return result;
+    }
+$('#invited_user').val(roundNumber(this.value * <%= ENV["FEE_CALC"] %>, 2));
